@@ -5,7 +5,7 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   router: {
-    base: '/ReportAPlayer/',
+    base: process.env.NODE_ENV === 'production' ? '/ReportAPlayer/' : '',
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
